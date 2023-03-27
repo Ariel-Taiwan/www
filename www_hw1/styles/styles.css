@@ -1,0 +1,225 @@
+html, body{
+  height: 100%;
+  margin: 0;
+}
+.wrapper{
+  min-height: 100%;
+  margin-bottom: -50px;
+}
+
+.image {
+	background-image: url("../image/Zootopia.png");
+	height: 400px;
+    Font-family: Serif、Sans-serif;
+    display:block;
+    margin-top:0;
+    margin-bottom:50px;
+}
+.ZooTopia {
+    Font-size: 50px;
+    Font-family: Serif;
+    Color: White;
+    display: inline-block;
+    padding: 0 10px;
+}
+  /* Position the navbar container inside the image */
+.topnav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    width: 1200px;
+    margin: 0 auto;
+}
+  /* The navbar */
+.topnav a {
+    overflow: hidden;
+    list-style: none; 
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* Navbar links */
+.items {
+    color: #ffffff;
+    text-align: center;
+    
+    text-decoration: none;
+    font-size: 17px;
+    text-align: center;
+    padding: 14px 6px;
+    display: inline-block;
+    /*display:flex;*/
+    margin-right: 25px;
+  }
+  
+.items:hover {
+    background-color: #c1b5a4;
+    color: #80624F;
+    border: #ccc 1px solid;
+  }
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.topnav a:hover, .dropdown:hover .dropbtn{
+  background-color: #c1b5a4;
+  color: #80624F;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: transparent;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+.dropdown-content a {
+    float: none;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    display: block;
+    border: #ccc 1px solid;
+  }
+  
+  /* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #c1b5a4;
+    color: #80624F;
+  }
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.con{
+  display: flex;
+  text-align:center;
+  justify-content: center;
+  font-size: 20px;
+  align-items: center;
+  padding: 20px 20px;
+}
+
+.typewriter{
+  width: 12ch;
+  Font-size: 50px;
+  animation: typing 5s steps(7), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  color: #80624F;
+}
+
+@keyframes typing {
+  from { width: 0%; }
+  to { width: 7em; }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
+
+.frame {  
+  height: 500px; /*can be anything*/
+  width: 500px; /*can be anything*/
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  margin:auto;
+  padding-bottom: 1cm;
+}
+img {  
+  max-height: 100%;  
+  max-width: 100%; 
+  width: auto;
+  height: auto;
+  position: absolute;  
+  top: 0;  
+  bottom: 0px;  
+  left: 0px;  
+  right: 0;  
+  margin: auto;
+  border-radius:50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+}
+
+.footer{
+  height: 25px;
+  background-color: rgb(12, 13, 64);
+  text-align: center;  
+  color: white;
+}
+
+.text{
+  color: #80624F;
+  font-size: 40px;
+  padding: 20px;
+  text-align: center; 
+}
+
+.for_list{
+  padding: 20px 200px;
+  padding-bottom: 80px;
+}
+
+.for_list li{
+  margin:10px;
+}
+
+.list_sytle{
+  list-style-type: decimal;
+  padding-left: 10px;
+  color:black;
+}
+
+table td ,table th{
+  border: 1px solid black;
+  padding: 10px 10px;
+    vertical-align: top;
+    line-height: 20px;
+}
+
+table{
+  width: 50%;
+  margin: 30px auto;
+  font-size: 20px;
+  padding: 10px 10px;
+  /*text-align: left;*/
+}
+
+.img2 {
+  width: auto;
+  height: auto;
+  display: block;
+  overflow-clip-margin: content-box;
+    overflow: clip;
+}
