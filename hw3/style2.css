@@ -1,0 +1,207 @@
+
+/* body樣式 */
+body {
+  background-color: #f2f2f2;
+  font-family: Arial, sans-serif;
+}
+.containter{
+  background-color: #87CEEB;
+  /*position: relative;*/
+}
+.aside{
+ background-color: #87CEEB;
+ width: 300px;
+ position: fixed;
+ top: 0;
+ bottom: 0;
+ right:0px;
+ transform: translateX(310px);
+ transition: ease .8s;
+ margin: 5px 5px;
+}
+.open .aside{
+ transform: translateX(10px);
+}
+.bar1{
+  width: 35px;
+	top: 0;
+  right: -300px;
+  position: fixed;
+  height: 5px;
+	transform: translateX(-300px);
+	transition: ease .8s;
+	background-color: #333;
+	margin: 12px 12px;
+}
+.bar2{
+  width: 35px;
+  top: 10px;
+  right: -300px;
+  position: fixed;
+  height: 5px;
+	transform: translateX(-300px);
+	transition: ease .8s;
+	background-color: #333;
+	margin: 12px 12px;
+}
+.bar3 {
+  width: 35px;
+	top: 20px;
+  right: -300px;
+  position: fixed;
+  height: 5px;
+	transform: translateX(-300px);
+	transition: ease .8s;
+	background-color: #333;
+	margin: 12px 12px;
+}
+
+.change .bar1 {
+	transform: translate(-300px, 10px) rotate(45deg);
+  background-color: #1E90FF;
+}
+
+.change .bar2 {
+	opacity: 0;
+  color: #1E90FF;
+}
+
+.change .bar3 {
+	transform: translate(-300px, -10px) rotate(-45deg);
+  background-color: #1E90FF;
+}
+
+.overlay-content {
+	position: relative;
+  background-color: #87CEEB;
+	top: 5%;
+	width: 100%;
+	text-align: center;
+
+	display: flex;
+	flex-direction: column;
+  height: 3000px;
+}
+
+.overlay-content a {
+	padding: 8px;
+	text-decoration: none;
+	font-size: 2rem;
+	color: #818181;
+	display: block;
+	transition: 0.3s;
+}
+
+.overlay-content a:hover {
+	transform: translate(5px, 0);
+	color: white;
+}
+/* 上方橫幅樣式 */
+#banner {
+  height: 200px;
+  background-image: url('fuji.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+/* 上方橫幅上的按鈕樣式 */
+#menu-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: #1E90FF;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+.img{
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+/* 側邊欄樣式 */
+.sidebar {
+  position: absolute;
+  width: 200px;
+  background-color: #778899;
+  color: white;
+  left: 0;
+  overflow-y: auto;
+}
+
+.sidebar h2 {
+  display: block;
+  padding: 10px;
+  color: #FFF8DC;
+}
+/* 側邊欄中的超連結樣式 */
+.sidebar a {
+  display: block;
+  padding: 10px;
+  color: white;
+  text-decoration: underline;
+}
+
+/* 側邊欄中的超連結的hover效果樣式 */
+.sidebar a:hover {
+  background-color: #444;
+}
+
+.mid{
+  padding-left: 220px;
+  right:0;
+  margin: 20px 20px;
+}
+.mid h2,h3{
+  margin: 22px 22px;
+  padding-right: 220px;
+  position: relative;
+}
+.button1 {
+  position: absolute;
+  right:100px;
+  background-color: #333;
+            color: white;
+            border: none;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            margin-right: 10px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            cursor: pointer;
+}
+.button2 {
+  position: absolute;
+  right:150px;
+          background-color: #333;
+                    color: white;
+                    border: none;
+                    padding-top: 15px;
+                    padding-bottom: 15px;
+                    margin-right: 10px;
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                    cursor: pointer;
+}
+.button3 {
+      position: absolute;
+      right:200px;
+      background-color: #333;
+                            color: white;
+                            border: none;
+                            padding-top: 15px;
+                            padding-bottom: 15px;
+                            margin-right: 10px;
+                            margin-top: 20px;
+                            margin-bottom: 20px;
+                            cursor: pointer;
+                        }
+.mid hr{
+  margin: 50px 50px;
+}
+
+.text{
+  padding: 100px;
+}
